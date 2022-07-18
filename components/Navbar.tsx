@@ -33,7 +33,7 @@ const Navbar = () => {
           <Image
             className="cursor-pointer"
             src={Logo}
-            alt="Tiktik"
+            alt="JOJO"
             layout="responsive"
           />
         </div>
