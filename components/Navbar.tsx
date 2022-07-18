@@ -7,7 +7,7 @@ import { BiSearch } from "react-icons/bi";
 import { IoMdAdd } from "react-icons/io";
 import { GoogleLogin, googleLogout } from "@react-oauth/google";
 
-import Logo from "../utils/tiktik-logo.png";
+import Logo from "../utils/logo.png";
 import Discover from "./Discover";
 import { createOrGetUser } from "../utils";
 import useAuthStore from "../store/authStore";
