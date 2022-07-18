@@ -7,6 +7,7 @@ import { GoogleOAuthProvider } from "@react-oauth/google";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const [isSSR, setIsSSR] = useState(true);
+  console.log("finally!");
 
   useEffect(() => {
     setIsSSR(false);
