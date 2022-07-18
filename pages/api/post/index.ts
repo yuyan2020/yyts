@@ -3,6 +3,8 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { client } from "../../../utils/client";
 import { allPostsQuery } from "../../../utils/queries";
 
+// console.log("%cindex.ts line:6 client.", "color: #007acc;", client.token);
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
@@ -13,5 +15,8 @@ export default async function handler(
     const data = await client.fetch(query);
 
     res.status(200).json(data);
+  } else if (req.method === "POST") {
+    const doc = req.body;
+    client.create(doc).then(() => res.status(201).json("Video Created"));
   }
 }
